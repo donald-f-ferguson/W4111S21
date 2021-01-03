@@ -6,3 +6,11 @@
 body {
   padding-top: 56px;
 }
+
+header {
+  background-color: #99CAEA;
+}
+
+.bg-primary {
+  background-color: #99CAEA!important;
+}
