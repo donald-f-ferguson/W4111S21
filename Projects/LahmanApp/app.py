@@ -178,6 +178,7 @@ def get_team_by_id(team_id):
 
     return rsp
 
+
 if __name__ == '__main__':
     #host, port = ctx.get_host_and_port()
 
