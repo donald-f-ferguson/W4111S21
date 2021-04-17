@@ -1,0 +1,51 @@
+group: W4111 SimpleUnion
+description[[ Simple UnionInteraction ]]
+
+students = {
+    id:string,first_name:string, last_name:string, email:string, year:string
+"c7de162c-9cb1-40a6-aa2e-1107f476eb85","Shannon","Duddy","sduddy0@mapy.cz",2024
+"80790f87-da9d-4ce7-b289-097e261b68a1","Florrie","Forri","fforri1@gravatar.com",2022
+"09c41519-0364-45db-b150-d3b224131aa2","Nadeen","Gilligan","ngilligan2@cnbc.com",2022
+"f5aa1dcd-9507-4159-99c6-abffa0a7d08a","Fredrika","Davidsohn","fdavidsohn3@nytimes.com",2024
+"e084377a-680d-44a4-b06c-e9ef2200ad42","Royal","McReidy","rmcreidy4@skype.com",2024
+"287ba420-f55b-4b96-87af-3cbc6b7d9b20","Ardenia","Larchier","alarchier5@people.com.cn",2021
+"d3f92f9d-738f-4559-8b5f-f1bd53d407a2","Theo","Matt","tmatt7@g.co",2023
+"572fec64-6dd2-432d-ab7e-1cb87878db6c","Hubert","Brosius","hbrosius9@state.gov",2022
+"803d3fad-1efd-49ee-a200-c54983d4d552","Beatrix","Durnall","bdurnalla@fastcompany.com",2023
+"1a9d98ac-4bcc-4820-b24b-30fdb5fe12ee","Lamar","Parmeter","lparmeterc@ebay.com",2024
+"e1d2b039-a71c-44bd-a0b2-1f87c8fdb564","Arney","Brandassi","abrandassid@sohu.com",2021
+"fb22851c-c339-4a50-b3c4-252c7570b504","Crista","Jerrome","cjerromee@fema.gov",2022
+"ff8ec5e9-985c-40ca-91ce-b638871dc863","Tova","Mayze","tmayzef@last.fm",2021
+"bebefbd1-303a-46df-afc5-46bb184eebdc","Raymond","Baxandall","rbaxandallg@businessweek.com",2022
+"475eaf54-7958-4128-b055-5655d839b339","Nyssa","Fernihough","nfernihoughh@epa.gov",2023
+"27a26320-3066-450d-b6ce-233782cdadbf","Yoshi","Gomez","ygomezj@eepurl.com",2022
+"30737004-88ab-47ac-abe9-5596976b6b72","Tilda","Draper","tdraperk@flavors.me",2023
+"128768d0-d529-49e6-aff0-00695d943177","Cassandra","Torregiani","ctorregianim@etsy.com",2023
+"9d21d256-6efd-4617-b3ac-d5884e10d09b","Franny","Dunne","fdunnen@alexa.com",2024
+"51d3b72c-ad21-4f3a-9435-d7a086db2e98","Gerti","Terbrug","gterbrugo@php.net",2023
+"3775df7e-6559-455d-bfdb-098aaaab6821","Benedikta","Falconer","bfalconerq@accuweather.com",2023
+"0b8f1f39-4219-4b7a-a26b-ee814ba39e7b","Prent","Brookesbie","pbrookesbier@msn.com",2022
+"8e67ee25-a37f-4b4b-ad21-14f70476ef92","Dedra","Hosburn","dhosburns@si.edu",2024
+"b608b0d9-4b6c-499f-a8a5-c35f13dd11b1","Dela","Maccaig","dmaccaigt@marriott.com",2022
+}
+
+faculty = {
+id:string,first_name:string, last_name:string, email:string, title:string, hire_date:string
+"09c41519-0364-45db-b150-d3b224131aa2";"Nadeen";"Gilligan";"ngilligan2@cnbc.com";"Assistant Professor";"2021"
+"036eac3e-b47e-4135-9e46-2873d690b112";"Mikael";"Cassely";"mcassely6@infoseek.co.jp";"University Professor";"2021"
+"d3f92f9d-738f-4559-8b5f-f1bd53d407a2";"Theo";"Matt";"tmatt7@g.co";"Assistant Professor";"2021"
+"6990c964-c9a9-46d6-b719-9ff758356f7f";"Neel";"Goosey";"ngoosey8@adobe.com";"Associate Professor";"2021"
+"572fec64-6dd2-432d-ab7e-1cb87878db6c";"Hubert";"Brosius";"hbrosius9@state.gov";"Associate Professor";"2021"
+"803d3fad-1efd-49ee-a200-c54983d4d552";"Beatrix";"Durnall";"bdurnalla@fastcompany.com";"University Professor";"2021"
+"026d8d36-0095-477a-bf82-1c158fba7f07";"Jenine";"Lindblom";"jlindblomb@taobao.com";"Assistant Professor";"2021"
+"bebefbd1-303a-46df-afc5-46bb184eebdc";"Raymond";"Baxandall";"rbaxandallg@businessweek.com";"Professor";"2021"
+"475eaf54-7958-4128-b055-5655d839b339";"Nyssa";"Fernihough";"nfernihoughh@epa.gov";"Adjunct Professor";"2021"
+"e9b34c28-4a17-42ca-8684-d474d114b51f";"Nadeen";"Rogerot";"nrogeroti@chicagotribune.com";"University Professor";"2021"
+"27a26320-3066-450d-b6ce-233782cdadbf";"Yoshi";"Gomez";"ygomezj@eepurl.com";"Assistant Professor";"2021"
+"30737004-88ab-47ac-abe9-5596976b6b72";"Tilda";"Draper";"tdraperk@flavors.me";"Adjunct Professor";"2021"
+"d47ed7e1-d6ec-4be5-8bd0-96902df9bc90";"Myriam";"Simmank";"msimmankl@apache.org";"Assistant Professor";"2021"
+"128768d0-d529-49e6-aff0-00695d943177";"Cassandra";"Torregiani";"ctorregianim@etsy.com";"Assistant Professor";"2021"
+"da789ee4-7608-4370-9c8a-f71704378cd5";"Prinz";"Tozer";"ptozerp@ox.ac.uk";"Professor";"2021"
+"0b8f1f39-4219-4b7a-a26b-ee814ba39e7b";"Prent";"Brookesbie";"pbrookesbier@msn.com";"Associate Professor";"2021"
+"8e67ee25-a37f-4b4b-ad21-14f70476ef92";"Dedra";"Hosburn";"dhosburns@si.edu";"Associate Professor";"2021"
+}
