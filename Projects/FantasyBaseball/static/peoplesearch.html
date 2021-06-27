@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+
+  } );
+  </script>
+    <script>
+function displayVals() {
+    console.log("Hello");
+  var singleValues = $( "#tags" ).val();
+  $( "p" ).html( "<b>Single:</b> " + singleValues );
+}
+    $( "#tags" ).keyup( displayVals );
+
+displayVals();
+</script>
+    <script>
+        $(function () {
+    var getData = function (request, response) {
+        $.getJSON(
+            "http://0.0.0.0:5001/api/people/search/" + request.term + "%",
+            function (data) {
+                console.log("Data = ", JSON.stringify(data, null, 3));
+                rsp = []
+                for (i = 0; i < data.length; i++) {
+                    let name = data[i].nameLast + ", " + data[i].nameFirst;
+                    rsp.push(name)
+                }
+                response(rsp);
+            });
+    };
+
+    var selectItem = function (event, ui) {
+        $("#myText").val(ui.item.value);
+        return false;
+    }
+
+    $("#myText").autocomplete({
+        source: getData,
+        select: selectItem,
+        minLength: 4,
+        change: function() {
+            $("#myText").val("").css("display", 2);
+        }
+    });
+});
+    </script>
+</head>
+<body>
+
+<p>
+    <div>
+    <label for="myText">Player Last Name:</label>
+    <input id="myText" />
+    </div>
+
+
+
+</body>
+</html>
